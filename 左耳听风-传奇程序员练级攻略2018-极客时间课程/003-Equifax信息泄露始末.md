@@ -44,7 +44,7 @@ Struts通过采用Java Servlet/JSP技术，实现了基于Java EE Web应用的MV
 
 而这次Equifax中招的漏洞编号是CVE-2017-5638，官方披露的信息见下图。简单来说，这是一个RCE的远程代码执行漏洞，最初是被安恒信息的Nike Zheng发现的，并于3月7日上报。
 
-![00005](./img/03-Equifax信息泄露始末.assets/00005-1718417364283-1.jpeg)
+![00005](./img/003-Equifax信息泄露始末.assets/00005-1718417364283-1.jpeg)
 
 从介绍中可以看出，此次漏洞的原因是Apache Struts 2的Jakarta Multipart parser插件存在远程代码执行漏洞，攻击者可以在使用该插件上传文件时，修改HTTP请求头中的Content-Type值来触发漏洞，最后远程执行代码。
 
@@ -65,7 +65,7 @@ requests.get("https://target", headers={"Connection": "close", "Accept": "*/*", 
 
 这里面最容易被利用的当属CVE-2017-9805，它是由国外安全研究组织lgtm.com的安全研究人员发现的又一个远程代码执行漏洞。漏洞原因是Struts 2 REST插件使用带有XStream程序的XStream Handler 进行未经任何代码过滤的反序列化操作，所以在反序列化XML payloads时就可能导致远程代码执行。
 
-![img](clbr://internal.sandbox/book/images/00006.jpeg)
+![00006](./img/003-Equifax信息泄露始末.assets/00006.jpeg)
 
 不过在Apache软件基金会的项目管理委员会的回应文章中，官方也对事故原因进行了分析和讨论。首先，依然不能确定泄露的源头是Struts的漏洞导致的。其次，如果确实是源于Struts的漏洞，那么原因“或是Equifax服务器未打补丁，使得一些更早期公布的漏洞被攻击者利用，或者是攻击者利用了一个目前尚未被发现的漏洞”。
 
