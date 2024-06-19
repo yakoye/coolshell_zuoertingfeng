@@ -19,6 +19,6 @@
 
 
 
-学习资料：
+其他参考资料：
 
 [The Way To Upgrade - 程序员练级攻略](https://github.com/LiuKay/the-way-to-upgrade)
