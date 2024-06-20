@@ -1,5 +1,9 @@
 # 每个计算机科学专业的学生都应该知道的
 
+What every computer science major should know
+
+
+
 原文链接：[这里](https://matt.might.net/articles/what-cs-majors-should-know/)
 
 [[文章索引](https://matt.might.net/articles/)] [[给我发电子邮件](mailto:matt-blog@might.net)] [[@马特可能](http://twitter.com/mattmight)] [[rss](https://matt.might.net/articles/feed.rss)]
